@@ -54,13 +54,11 @@ class NewFurniture extends React.Component {
     const {
       categories,
       products,
-      mode, 
-      /*productsPage*/ //nie działa po mergu
-      addRating,
+      mode, //nie działa po mergu
+      /*productsPage*/ addRating,
       subpage,
     } = this.props;
     const { activeCategory, activePage, activeFade } = this.state;
-    const { categories, products, mode, subpage } = this.props;
     let columnNumber;
     let productsPerPage;
     let styleMenu;
@@ -92,7 +90,7 @@ class NewFurniture extends React.Component {
 
     const categoryProducts = products.filter(item => item.category === activeCategory);
     const pagesCount = Math.ceil(categoryProducts.length / productsPerPage);
-    const pages = [];
+    /*     const pages = [];
     for (let i = 0; i < pagesCount; i++) {
       pages.push(
         categoryProducts
@@ -103,7 +101,7 @@ class NewFurniture extends React.Component {
             </div>
           ))
       );
-    }
+    } */
 
     const pages = [];
     for (let i = 0; i < pagesCount; i++) {
@@ -143,9 +141,9 @@ class NewFurniture extends React.Component {
                   ))}
                 </ul>
               </div>
-              <div className={'col-auto ' + styles.dots}>
+              {/*               <div className={'col-auto ' + styles.dots}>
                 <ul>{dots}</ul>
-              </div>
+              </div> */}
             </div>
           </div>
           <div
@@ -158,7 +156,7 @@ class NewFurniture extends React.Component {
               handlePageChange={this.handlePageChange.bind(this)}
               pages={pages}
             />
-          </div
+          </div>
           <SectionHeading
             title={'New furniture'}
             pagesCount={pagesCount}
