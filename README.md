@@ -1,4 +1,4 @@
-# Project \#WDP211101
+# Team Project: Furniture Shop React App
 
 
 ## Introduction
@@ -7,6 +7,10 @@ This project is an example of the e-commerce webpage build during the bootcamp f
 
 A freeware PSD graphic template and an issue tracking tool were used by a group of **_junior devs_** led by a **_mentor-product owner_** to mimick commercial programming environment in *Kanban* methodology.
 
+## Demo version
+[https://halniak-team-project.web.app/](https://halniak-team-project.web.app/)
+
+For optimal user experience `use viewport width > 1200 px`
 
 ## Getting started
 
@@ -25,12 +29,10 @@ To build the distribution version:
 npm run build
 ```
 
+## Technologies
 
-## Built with
-
-- React.js
-- React-redux
-- Jest & Enzyme
+- Create React App
+- React Redux
 - Bootstrap
 - ESLint & Prettier
 - Flexbox & CSS Grid
@@ -42,7 +44,7 @@ npm run build
 
 This project uses React, React Hooks, React Router and Redux in order to present practical skills in these technologies. They allowed it to make the state management more structured.
 
-Please note that this web app was build mainly for demo purposes on a viewport with `1200 px min-width`. The tablet and mobile platforms will not provide optimal user experience.
+Please note that this web app was build mainly for demo purposes on a viewport with 1200 px min-width. The tablet and mobile platforms will not provide optimal user experience.
 
 
 ### Features:
